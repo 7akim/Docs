@@ -65,7 +65,7 @@
 								<li><a href="">getengagementsummary</a></li>
 							</ul>
 						</li>
-						<li>
+						<!--<li>
 							<input type="checkbox" id="nav-notify"/>
 							<label for="nav-notify">Notifications</label>
 							<ul>
@@ -73,7 +73,7 @@
 								<li><a href="">fetchnotifications</a></li>
 								<li><a href="">notificationsupdatelastviewedversion</a></li>
 							</ul>
-						</li>
+						</li>-->
 						<li>
 							<input type="checkbox" id="nav-circle"/>
 							<label for="nav-circle">Circles & People</label>
@@ -81,7 +81,7 @@
 								<li><a href="">loadsocialnetwork</a></li>
 								<li><a href="">loadblockedpeople</a></li>
 								<!-- <li><a href="">getcelebritysuggestions</a></li> -->
-								<li><a href="">loadpeopleviewdata</a></li>
+								<!-- <li><a href="">loadpeopleviewdata</a></li> -->
 								<li><a href="">modifymemberships</a></li>
 							</ul>
 						</li>
@@ -104,7 +104,7 @@
 								<li><a href="">geteventinviteelist</a></li>
 							</ul>
 						</li>
-						<li>
+						<!--<li>
 							<input type="checkbox" id="nav-album"/>
 							<label for="nav-album">Albums & Photos</label>
 							<ul>
@@ -115,7 +115,7 @@
 								<li><a href="">collectionread</a></li>
 								<li><a href="">photosofuser</a></li>
 							</ul>
-						</li>
+						</li>-->
 					</ul>
 				</div>
 			</div>
