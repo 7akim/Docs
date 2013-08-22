@@ -15,15 +15,15 @@ API Basics
 ----------
 All APIs are based on HTTP/1.1
 
-The base URL is:
+The base URL (Expect whitelisted interfaces) is:
 
 		https://www.googleapis.com/plusi/v2/ozInternal/{method}
 
-Only POST request is allowed.
+Only POST request is allowed on this path.
 
-You should always send a Bearer Authorization header. For more details see [Authorization](/apis/auth.html)
+You should always send a Bearer  or OaUTH Authorization header. For more details see [Authorization](/apis/auth.html)
 
-Common Fields
+Common Fields (POST interface only)
 -------------
 You should always add a "commonFields" property to your JSON request body (including batch requests).
 
