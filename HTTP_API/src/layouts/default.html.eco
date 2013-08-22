@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= @document.title %></title>
+	<%- @getBlock("meta").toHTML() %>
+    <%- @getBlock("styles").add(["/bootstrap/css/bootstrap.min.css",'/style/treeview.css','/highlight.js/styles/default.css']).toHTML() %>
+</head>
+<body style="padding-top:12px">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="css-treeview" style="position:fixed;">
+					<ul>
+						<li>
+							<a href="/index.html">Overview</a>
+						</li>
+						<li>
+							<a href="/apis/auth.html">Authorization</a>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-univ"/>
+							<label for="nav-univ">Universual & Settings</label>
+							<ul>
+								<li><a href="">getmobilesettings</a></li>
+								<li><a href="">searchquery</a></li>
+								<li><a href="">postactivity</a></li>
+								<!-- TBD -->
+								<!-- <li><a href="">getvolumecontrols</a></li> -->
+								<!-- <li><a href="">settingsfetch</a></li> -->
+								<!-- <li><a href="">settingsset</a></li> -->
+								<!-- <li><a href="">getphotossettings</a></li> -->
+								<!-- <li><a href="">setphotossettings</a></li> -->
+								<!-- <li><a href="">getautotaggingpreference</a></li> -->
+								<!-- <li><a href="">setautotaggingpreference</a></li> -->
+								<!-- <li><a href="">getsources</a></li> -->
+								<!-- <li><a href="">updatesource</a></li> -->
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-user"/>
+							<label for="nav-user">Users & Pages</label>
+							<ul>
+								<li><a href="">getsimpleprofile</a></li>
+								<!-- <li><a href="">getpeopledata</a></li> -->
+								<li><a href="">getreviewsdata</a></li>
+								<li><a href="">muteuser</a></li>
+								<li><a href="">blockuser</a></li>
+								<li><a href="">mutateprofile</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-act"/>
+							<label for="nav-act">Activities & Comments</label>
+							<ul>
+								<li><a href="">getactivities</a></li>
+								<li><a href="">getactivitiesbyid</a></li>
+								<li><a href="">plusone</a></li>
+								<li><a href="">getplusonepeople</a></li>
+								<li><a href="">postcomment</a></li>
+								<li><a href="">editcomment</a></li>
+								<li><a href="">deletecomment</a></li>
+								<li><a href="">muteactivity</a></li>
+								<li><a href="">deleteactivity</a></li>
+								<li><a href="">getengagementsummary</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-notify"/>
+							<label for="nav-notify">Notifications</label>
+							<ul>
+								<li><a href="">fetchnotificationscount</a></li>
+								<li><a href="">fetchnotifications</a></li>
+								<li><a href="">notificationsupdatelastviewedversion</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-circle"/>
+							<label for="nav-circle">Circles & People</label>
+							<ul>
+								<li><a href="">loadsocialnetwork</a></li>
+								<li><a href="">loadblockedpeople</a></li>
+								<!-- <li><a href="">getcelebritysuggestions</a></li> -->
+								<li><a href="">loadpeopleviewdata</a></li>
+								<li><a href="">modifymemberships</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-square"/>
+							<label for="nav-square">Squares & Communities</label>
+							<ul>
+								<li><a href="">getsquares</a></li>
+								<li><a href="">getviewersquare</a></li>
+								<li><a href="">editsquaremembership</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-event"/>
+							<label for="nav-event">Events</label>
+							<ul>
+								<li><a href="">eventread</a></li>
+								<li><a href="">eventshome</a></li>
+								<li><a href="">eventrespond</a></li>
+								<li><a href="">geteventinviteelist</a></li>
+							</ul>
+						</li>
+						<li>
+							<input type="checkbox" id="nav-album"/>
+							<label for="nav-album">Albums & Photos</label>
+							<ul>
+								<li><a href="">getphotossettings</a></li>
+								<li><a href="">allphotosview</a></li>
+								<li><a href="">getphoto</a></li>
+								<li><a href="">userphotoalbums</a></li>
+								<li><a href="">collectionread</a></li>
+								<li><a href="">photosofuser</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<div class="col-lg-9">
+			<%- @content %>
+		</div>
+	</div>
+	</div>
+    <%- @getBlock("scripts").add(['/script/jquery-2.0.0.min.js','/highlight.js/highlight.pack.js','/script/global.js']).toHTML() %>
+
+</body>
+</html>
